@@ -1,0 +1,29 @@
+[1/7 20.10] -: <?php
+function fibonacci($n) {
+    if ($n <= 0) {
+        return 0;
+    } elseif ($n == 1 || $n == 2) {
+        return 1;
+    } else {
+        return fibonacci($n - 1) + fibonacci($n - 2);
+    }
+}
+
+$number = 6;
+$result = fibonacci($number);
+echo "Fibonacci ke-$number adalah: $result";
+?>
+[1/7 20.10] -: <?php
+function pangkat($x, $y) {
+    $result = 1;
+    for ($i = 1; $i <= $y; $i++) {
+        $result *= $x;
+    }
+    return $result;
+}
+
+$base = 2;
+$exponent = 3;
+$result = pangkat($base, $exponent);
+echo "$base pangkat $exponent adalah: $result";
+?>
